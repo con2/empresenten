@@ -1,3 +1,16 @@
+# Empresenten – Display a Google Slides presentation on an info screen
+
+Plan:
+
+1. Editor User updates a Google Slides presentation
+2. Editor User clicks Publish on an admin page
+3. Backend exports presentation to PDF, downloads it, converts each slide to SVG and uploads it to Minio (S3)
+4. Backend updates a manifest file
+5. Screens refresh the manifest file every X minutes
+6. Screens display slides one by one from the manifest, downloading their contents as SVG from Minio
+
+# Next.js default boilerplate README
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
