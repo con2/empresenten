@@ -1,5 +1,7 @@
 # Empresenten – Display a Google Slides presentation on an info screen
 
+Work in progress
+
 Plan:
 
 1. Editor User updates a Google Slides presentation
