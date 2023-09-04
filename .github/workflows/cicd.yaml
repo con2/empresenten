@@ -3,7 +3,7 @@ name: cicd
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -39,7 +39,7 @@ jobs:
   deploy:
     runs-on: self-hosted
     needs: build
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     steps:
       - uses: actions/checkout@v1
       - name: Get build.json from build step
