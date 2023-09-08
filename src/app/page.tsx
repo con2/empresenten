@@ -1,7 +1,6 @@
 import exampleSvg1 from './example/1.svg'
 import exampleSvg2 from './example/2.svg'
 import exampleSvg3 from './example/3.svg'
-import exampleSvg4 from './example/4.svg'
 
 import Presentation from './presentation'
 import { IPresentation } from './models'
@@ -12,7 +11,6 @@ async function getPresentation(): Promise<IPresentation> {
       { src: exampleSvg1 },
       { src: exampleSvg2 },
       { src: exampleSvg3 },
-      { src: exampleSvg4 },
     ],
   }
 }
